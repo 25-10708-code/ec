@@ -5,7 +5,7 @@ from openai import OpenAI
 st.set_page_config(page_title="오늘의 감정 영화 추천", page_icon="🎬", layout="centered")
 
 # 2. [필수 수정] 여기에 본인의 OpenAI API 키를 입력하세요!
-# 예시: OPENAI_API_KEY = "sk-proj-..." 
+# 예시: OPENAI_API_KEY = "sk-proj-1234..." 
 OPENAI_API_KEY = "YOUR_OPENAI_API_KEY_HERE"
 
 # 3. 메인 화면 UI 디자인
@@ -25,10 +25,6 @@ if st.button("나에게 맞는 작품 추천받기 ✨", use_container_width=Tru
     # 입력값이 비어있는 경우
     if not user_diary.strip():
         st.warning("오늘 하루를 아주 짧게라도 입력해 주세요!")
-        
-    # API 키를 수정하지 않고 그대로 둔 경우
-    elif OPENAI_API_KEY == mppp 
-        st.error("코드 내 9번째 줄의 'YOUR_OPENAI_API_KEY_HERE' 부분을 본인의 실제 OpenAI API 키로 변경하셔야 작동합니다.")
         
     # 정상 작동
     else:
