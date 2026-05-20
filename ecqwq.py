@@ -1,5 +1,3 @@
-streamlit
-openai
 import streamlit as st
 from openai import OpenAI
 
@@ -29,7 +27,7 @@ if st.button("나에게 맞는 작품 추천받기 ✨", use_container_width=Tru
         st.warning("오늘 하루를 아주 짧게라도 입력해 주세요!")
         
     # API 키를 수정하지 않고 그대로 둔 경우
-    elif OPENAI_API_KEY == "YOUR_OPENAI_API_KEY_HERE":
+    elif OPENAI_API_KEY == "YOUR_OPENAI_API_KEY_HERE":moon
         st.error("코드 내 9번째 줄의 'YOUR_OPENAI_API_KEY_HERE' 부분을 본인의 실제 OpenAI API 키로 변경하셔야 작동합니다.")
         
     # 정상 작동
